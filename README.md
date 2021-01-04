@@ -23,8 +23,8 @@ Projekt został przygotowany na przeglądarkę *Google Chrome v84+*
 * [Wikipedia - Fraktale](https://en.wikipedia.org/wiki/Fractal)
 
 Zdjęcia
-* [Zbiór Mandelbrota](https://de.wikipedia.org/wiki/Datei:Blue-Gold_Mandelbrot_Set.jpg)
-* [Przykładowy fraktal](https://pl.pinterest.com/pin/126241595775589176/)
-* [Kalafior rzymski](https://en.wikipedia.org/wiki/Romanesco_broccoli#/media/File:Fractal_Broccoli.jpg)
-* [Aloes](https://pl.pinterest.com/pin/116460340334269511/)
-* [Płatek śniegu](http://www.snowcrystals.com/branching/branching.html)
+*  [1] - [Zbiór Mandelbrota](https://de.wikipedia.org/wiki/Datei:Blue-Gold_Mandelbrot_Set.jpg)
+*  [2] - [Przykładowy fraktal](https://pl.pinterest.com/pin/126241595775589176/)
+*  [3] - [Kalafior rzymski](https://en.wikipedia.org/wiki/Romanesco_broccoli#/media/File:Fractal_Broccoli.jpg)
+*  [4] - [Aloes](https://pl.pinterest.com/pin/116460340334269511/)
+*  [5] - [Płatek śniegu](http://www.snowcrystals.com/branching/branching.html)

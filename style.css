@@ -412,4 +412,9 @@ input[type="color"]::-webkit-color-swatch {
   padding: 5px;
 }
 
+#docs-link {
+  color:rgb(238, 225, 225);
+  font-size: 1.2em;
+}
+
 /* Modal - END */
