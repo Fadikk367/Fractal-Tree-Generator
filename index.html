@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <title>Fractal Tree Generaotr</title>
+</head>
+<body>
+  <header>
+    <h1>
+      Fractal Tree Generator
+      <span id="version">v1.0.0</span>
+    </h1>
+    <img src="./assets/info.svg" id="toggle-info-btn" alt="info icon">
+  </header>
+  <main>
+    <aside>
+      <section class="controls-section">
+        <form name="tree-structure-form">
+          <h3 class="form-header">Define main parameters:</h3>
+          <label class="range-label">
+            Split angle<br />
+            <input type="range" name="splitAngle" min="0" max="90" value="20"/>
+          </label>
+          <label class="range-label">
+            Size<br />
+            <input type="range" name="branchLength" min="80" max="160" value="100"/>
+          </label>
+          <label class="range-label">
+            Recursion deepth<br />
+            <input type="range" name="deepth" min="1" max="13" value="8"/>
+          </label>
+          <label class="range-label">
+            Split angle variance<br />
+            <input type="range" name="splitAngleVariance" min="0" max="20" value="0"/>
+          </label>
+          <label class="range-label">
+            Branch length variance<br />
+            <input type="range" name="branchLengthVariance" min="0" max="60" value="0"/>
+          </label>
+          <label class="range-label">
+            Branching probability<br />
+            <input type="range" name="splitProbability" min="0" max="100" value="100"/>
+          </label>
+          <label class="range-label">
+            Seed
+            <input type="number" name="seed">
+          </label>
+        </form>
+      </section>
+      <section class="controls-section">
+        <form name="treeThemeForm">
+          <h3 class="form-header">Style your tree!</h3>
+          <label class="range-label">
+            Root thickness<br />
+            <input type="range" name="rootThickness" min="5" max="20" value="10" id="root-thickness-input"/>
+          </label>
+          <div class="controls-row">
+            <label class="cell-label">
+              Leaves<br />
+              <input type="checkbox" id="drawLeaves" name="isDrawingLeaves"/>
+            </label>
+            <label class="cell-label">
+              Shadows<br />
+              <input type="checkbox" id="drawShadows" name="isDrawingShadows"/>
+            </label>
+            <label class="cell-label">
+              Color<br />
+              <input type="color" id="branchColor" name="branchColor"/>
+            </label>
+          </div>
+        </form>
+      </section>
+      <button id="grow-btn">Watch it grow!</button>
+    </aside>
+    <div id="content">
+      <canvas></canvas>
+    </div>
+  </main>
+  <button id="download-btn">
+    <img src="./assets/download.svg" alt="download icon">
+    <span>Export to JPEG</span> 
+  </button>
+  <div id="modal">
+    <div id="modal-content">
+      <button id="close-modal-btn">&times;</button>
+      <article>
+        <h2>What fractal is?</h2>
+        <p>A curve or geometrical figure, each part of which has the same statistical character as the whole. They are useful in modelling structures (such as snowflakes) in which similar patterns recur at progressively smaller scales, and in describing partly random or chaotic phenomena such as crystal growth and galaxy formation.</p>
+        <br />
+        <figure>
+          <img src="./assets/mandelbrots-set.jpg" alt="">
+          <figcaption>[1] Mandelbrots set</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/fractal-example.jpg" alt="">
+          <figcaption>[2] Fractal example</figcaption>
+        </figure>
+        <h2>Examples of fractals in nature</h2>
+        <br />
+        <figure>
+          <img src="./assets/Fractal_Broccoli.jpg" alt="">
+          <figcaption>[3] Rome Cauliflower</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/aloes.jpg" alt="">
+          <figcaption>[4] Aloes</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/snowflake.jpg" alt="">
+          <figcaption>[5] Snowflake</figcaption>
+        </figure>
+      </article>
+      
+      <article>
+        <h2>Performance warnings</h2>
+        <p>When recursion deepth is set to high value there migth be issues with fluency when changing other parameters. Therefore drawing leaves and shadows is turned off when playing structure parameters to improve user experience.</p>
+      </article>
+
+      <article>
+        <h2>Documentation</h2>
+        <a href="">link</a>
+      </article>
+    </div>
+  </div>
+  <script src="./alea.min.js"></script>
+  <script src='./main.js'></script>
+</body>
+</html>
