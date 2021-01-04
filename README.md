@@ -4,7 +4,10 @@ Prosta aplikacja rysująca za pomocą html canvas drzewiasty fraktal.
 
 ![podgląd](./assets/preview.png)
 
+[DEMO](https://fadikk367.github.io/Fractal-Tree-Generator/)
+
 Interfejs pozwala na edycję rozmaitych parametrów głównie za pomocą formularzy znajdujących się w menu bocznym. Parametry odpowiadają za strukturę drzewa oraz jego styl. Klikając w przycisk "WATCH IT GROW" w lewym dolnym roku można zobaczyć animację rysowania drzewa od korzenia w górę. Za animację odpowiada Web Worker, który poprzez transfer otrzymuje element OffscreenCanvas oraz poprzez kopiowanie strukturę drzewa rozbitą na punkty wraz z niezbędnymi informacjami dotyczącymi styli. Stworzone drzewo można pobrać w formacie JPEG klikając przycisk w prawym dolnym rogu ekranu.
+
 
 ## Wykorzystane technologie
 * HTML5, 
